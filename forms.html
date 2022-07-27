@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Forms</h1>
+    <form action="https://www.reddit.com/search">
+        <h2>Reddit</h2>
+        <p>
+            <label for="query">Search:</label>
+            <input type="text" aria-placeholder="search" id="query" placeholder="search" name="q">
+        </p>
+        <button type="submit">Submit</button>
+    </form>
+    <hr>
+    <form action="https://www.google.com/search">
+        <h2>Google</h2>
+        <p>
+            <label for="search">Search:</label>
+            <input type="text" id="search" placeholder="search" name="q">
+        </p>
+        <button>Submit</button>
+    </form>
+    <hr>
+    <form action="https://www.youtube.com/results">
+        <h2>Youtube</h2>
+        <p>
+            <label for="search_yt">Search:</label>
+            <input type="text" id="search_yt" placeholder="search" name="search_query">
+        </p>
+        <button>Submit</button>
+    </form>
+
+    <p>
+        <label for="username">Enter a Username:</label>
+        <input type="text" id="username" placeholder="username" name="username">
+    </p>
+    <p>
+        <label for="pass">Enter a password</label>
+        <input type="password" id="pass" placeholder="password" name="password">
+    </p>
+
+    <p>
+        <label for="color">Choose a color</label>
+        <input type="color" id="color" name="color">
+    </p>
+    <p>
+        <label for="number">Choose a number</label>
+        <input type="number" id="number" placeholder="enter a number" name="number" min="0" max="100" step="10">
+    </p>
+    <h2>More inputs</h2>
+    <form action="/birds">
+        <p>
+            <input type="checkbox" name="agree_tos" id="agree">
+            <label for="agree">I agree for everything</label>
+        </p>
+        <p>
+            <label for="S">S</label>
+            <input type="radio" name="size" id="s" value="s">
+            <label for="M">M</label>
+            <input type="radio" name="size" id="m" value="m">
+            <label for="L">L</label>
+            <input type="radio" name="size" id="l" value="l">
+        </p>
+        <hr>
+        <p>
+            <label for="meal">Please select meal type</label>
+            <select name="meal" id="meal">
+                <option value="steak">Steak</option>
+                <option value="pork">Pork</option>
+                <option value="chicken">Chicken</option>
+            </select>
+        </p>
+        <p>
+            <label for="cheese">Amount of cheese:</label>
+            <input type="range" id="cheese" name="cheese" min="0" max="100" step="5">
+        </p>
+        <p>
+            <label for="textArea">Any special requests</label>
+            <br>
+            <textarea name="textArea" id="textArea" cols="30" rows="10" placeholder="Write something..."></textarea>
+        </p>
+
+        <button>Submit</button>
+    </form>
+
+    <h2>Validations</h2>
+    <form action="/dummy">
+        <p>
+            <label for="firstname">Enter First Name:</label>
+            <input type="text" id="firstname" name="firstname">
+        </p>
+        <p>
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" minlength="4" maxlength="10" required>
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="emai" required>
+        </p>
+        <button>Submit </button>
+    </form>
+
+
+</body>
+
+</html>

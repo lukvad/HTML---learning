@@ -1,0 +1,32 @@
+/* h2 {
+    color: teal;
+    background-color: #9a9a9a;
+}
+
+button {
+    color: magenta;
+    background-color: #00009a;
+}
+
+p {
+    color: olive;
+} */
+
+
+h1 {
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 10px;
+    text-decoration: underline;
+    font-size: 70px;
+    font-family: system-ui;
+}
+
+p {
+    text-align: center;
+    line-height: 200%;
+}
+
+a {
+    text-decoration: none;
+}
