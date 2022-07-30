@@ -1,3 +1,92 @@
-button {
+/* BODY */
+
+body {
+    background-color: #D5ECD4;
+}
+
+.post:nth-of-type(2n) {
+    background-color: #C7E6C6;
+}
+
+/* TEXT */
+
+h1,
+h2 {
+    color: #04395E;
+}
+
+h2::first-letter {
     font-size: 30px;
+}
+
+h2::selection {
+    background-color: #ECA72C;
+}
+
+span {
+    color: #5386E4;
+}
+
+/* TAG */
+.tag {
+    background-color: #ECA72C;
+    color: #D5ECD4;
+    font-size: 17px;
+    letter-spacing: 6px;
+}
+
+/* INPUT */
+input[type="password"] {
+    color: #04395E;
+}
+
+
+/* ANCHOR */
+
+a[href*="index.html"] {
+    color: #ECA72C;
+}
+
+footer>a {
+    color: #04395E;
+}
+
+.post a {
+    color: #04395E;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+footer a {
+    color: #5386E4;
+}
+
+/* 2x to samo  */
+a[href$=".html"] {
+    color: #5386E4;
+}
+
+
+/* BUTTONS */
+
+.post button:hover {
+    background-color: #ECA72C;
+}
+
+.post button:active {
+    background-color: #ed5b2a;
+}
+
+button {
+    font-size: 18px;
+    background-color: #5DFDCB;
+}
+
+#signup {
+    background-color: #04395E;
+    color: #D5ECD4;
 }

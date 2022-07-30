@@ -1,0 +1,18 @@
+section {
+    width: 80%;
+    height: 800px;
+    background: center/cover url("background.jpg");
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 100px;
+    color: white;
+    font-family: Roboto, sans-serif;
+}
+
+p {
+    font-family: Montserrat, sans-serif;
+    font-weight: 100;
+    color: aliceblue;
+}

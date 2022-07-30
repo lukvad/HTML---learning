@@ -1,0 +1,127 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #3d405b;
+    border: 2px solid black;
+    margin: 10px;
+    display: inline-block;
+}
+
+section div {
+    height: 100px;
+    width: 100px;
+    background-color: turquoise;
+    margin: 20px 0;
+    transition: margin-left 3s;
+    display: block;
+}
+
+/* section:hover div {
+    margin-left: 500px;
+} */
+
+div:nth-of-type(1):hover {
+    transform: rotate(-0.25turn);
+}
+
+div:nth-of-type(2) {
+    transition-timing-function: ease-out;
+}
+
+div:nth-of-type(3) {
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+
+@keyframes scale-easeOutElastic {
+    0% {
+        transform: scale(1);
+    }
+
+    16% {
+        transform: scale(-0.32);
+    }
+
+    28% {
+        transform: scale(0.23);
+    }
+
+    44% {
+        transform: scale(-0.15);
+    }
+
+    59% {
+        transform: scale(0.02);
+    }
+
+    73% {
+        transform: scale(-0.01);
+    }
+
+    88% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+
+}
+
+
+div:nth-of-type(4):hover {
+    animation-name: scale-easeOutElastic;
+    animation-duration: 5s;
+}
+
+
+
+.circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #81b29a;
+    transition: background-color 1s 1s;
+}
+
+.circle:hover {
+    background-color: bisque;
+    border-radius: 20%;
+}
+
+#middle {
+    background-color: #81b29a;
+}
+
+#static #middle {
+    position: static;
+    top: 100px;
+}
+
+#relative #middle {
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+#absolute {
+    position: relative;
+}
+
+#absolute #middle {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+#fixed #middle {
+    position: fixed;
+    top: 1px;
+    left: 1px;
+}
+
+#sticky #middle {
+    position: sticky;
+    top: 20px;
+}
